@@ -6,15 +6,17 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "fs": "^0.0.1-security",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "helpers": "node src/helpers.js",
+    "start": "node src/helpers.js && react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +36,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@tensorflow/tfjs": "^4.17.0",
+    "@tensorflow/tfjs-node": "^4.17.0",
+    "@vladmandic/face-api": "^1.7.13",
+    "axios": "^1.6.7",
+    "canvas": "^2.11.2",
+    "copy-webpack-plugin": "^12.0.2",
+    "face-api.js": "^0.22.2",
+    "file-loader": "^6.2.0",
+    "fs.promises": "^0.1.2",
+    "react-app-rewired": "^2.2.1"
   }
 }
