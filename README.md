@@ -9,9 +9,15 @@ Simple proof of concept that
 
 Node.js, Face-api.js, React, Webpack
 
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and hotwired with React App Rewired.
+This is a Create React App hotwired with React App Rewired, and you can easily initialize it `npm init -y` and run a dev version using `npm start`
+
+The app has three image URLs at the bottom of helpers.js file for initial display.
+
+## Future Feature
+
+Add a field to drop in a file or files
 
 ## Available Scripts
 
