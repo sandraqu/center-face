@@ -1,4 +1,4 @@
-# Use AI to Center Face in Circle
+# Use AI Face Recognition to Find Faces
 
 Simple proof of concept that
 - consumes one or more image URLs
