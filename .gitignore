@@ -11,6 +11,10 @@
 # production
 /build
 
+# directories
+src/assets
+src/facesData.js
+
 # misc
 .DS_Store
 .env.local
