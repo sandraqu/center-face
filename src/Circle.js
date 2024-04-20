@@ -11,15 +11,15 @@ const Circle = ({ faceData }) => {
     backgroundColor: "#ccc",
     border: "4px solid #EEEEEE",
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
     overflow: "hidden",
     margin: "10px",
+    position: "relative",
   };
 
   const faceStyles = {
     textAlign: "center",
-    position: "relative",
+    position: "absolute",
+    transformOrigin: "top left",
     transform: `scale(${getImageReduceBy(faceData)})`,
     left: getFaceDataHorizontalOffset(faceData) + "px",
     top: getFaceDataVerticalOffset(faceData) + "px",
@@ -44,14 +44,17 @@ const Circle = ({ faceData }) => {
 
   function getFaceDataHorizontalOffset(faceData) {
     const imageReduceBy = getImageReduceBy(faceData);
-    const imageCenterOffset = faceData.imageDimensions.width * imageReduceBy / 2;
-    const faceDataCenterOffset = faceData.x * imageReduceBy + faceData.width * imageReduceBy / 2;
-    return faceDataCenterOffset - imageCenterOffset;
+    const faceDataCenterOffset = (faceData.x - (faceData.width/2)) * imageReduceBy;
+    return faceDataCenterOffset * -1;
   }
 
   function getFaceDataVerticalOffset(faceData) {
     const imageReduceBy = getImageReduceBy(faceData);
-    return faceData.y * imageReduceBy;
+    // fix this
+    // 29 is (200-141)/2
+    // circle is 200, 141 is side length of square that fits in circle
+    // half of that is a padding adjustment
+    return ((faceData.y * imageReduceBy) - 29) * -1;
   }
 
   // Combine user-defined styles with defaults
@@ -76,13 +79,17 @@ const Circle = ({ faceData }) => {
 
   return (
     <div style={circleStyles}>
-      <span style={faceStyles}>
+      <div style={faceStyles}>
         <img
           src={`${directoryPath}/${faceData.name}`}
+          /*
+           * debugging with face detection
+           src={`${directoryPath}/${faceData.name}-detected.jpg`}
+           */
           title={faceData.name}
           alt="Image"
         />
-      </span>
+      </div>
     </div>
   );
 };

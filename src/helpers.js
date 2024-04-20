@@ -48,11 +48,11 @@ const saveImageLocally = async (url) => {
   const imageUris = [
     'https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg',
     'https://cdn.vox-cdn.com/uploads/chorus_image/image/71467431/Team0.0.jpg',
-    'https://static.vecteezy.com/system/resources/previews/008/347/409/large_2x/doodle-faces-on-color-spots-hand-drawn-people-faces-icons-with-emotions-vector.jpg',
+    // 'https://static.vecteezy.com/system/resources/previews/008/347/409/large_2x/doodle-faces-on-color-spots-hand-drawn-people-faces-icons-with-emotions-vector.jpg',
     // 'https://datatechvibe.com/wp-content/uploads/2021/11/Women-Leaders-in-AI.jpg',
-    // 'https://familyapp.com/wp-content/uploads/2021/07/find-the-best-haircut-for-your-face-shape-for-women-1.jpg',
+    'https://familyapp.com/wp-content/uploads/2021/07/find-the-best-haircut-for-your-face-shape-for-women-1.jpg',
     // 'https://static01.nyt.com/images/2020/11/19/us/artificial-intelligence-fake-people-faces-promo-1605818328743/artificial-intelligence-fake-people-faces-promo-1605818328743-jumbo-v2.jpg?quality=75&auto=webp',
-    // 'https://www.second-sense.org/wp-content/uploads/2022/02/Face-Blindness-Group-Image-2048x1536.jpg'
+    'https://www.second-sense.org/wp-content/uploads/2022/02/Face-Blindness-Group-Image-2048x1536.jpg'
   ];
   const facesData = [];
   for (const imageUri of imageUris) {

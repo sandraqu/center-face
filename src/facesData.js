@@ -22,14 +22,25 @@ module.exports = [
     "name": "Team0.0.jpg"
   },
   {
-    "x": 656.7171478271484,
-    "y": 619.7037506103516,
-    "width": 188.73332977294922,
-    "height": 240.08068084716797,
+    "x": 107.4661135673523,
+    "y": 325.44803619384766,
+    "width": 75.27287006378174,
+    "height": 107.71417617797852,
     "imageDimensions": {
-      "width": 1920,
-      "height": 1920
+      "width": 800,
+      "height": 800
     },
-    "name": "doodle-faces-on-color-spots-hand-drawn-people-faces-icons-with-emotions-vector.jpg"
+    "name": "find-the-best-haircut-for-your-face-shape-for-women-1.jpg"
+  },
+  {
+    "x": 1694.098388671875,
+    "y": 1167.9921875,
+    "width": 164.583984375,
+    "height": 272.47827148437506,
+    "imageDimensions": {
+      "width": 2048,
+      "height": 1536
+    },
+    "name": "Face-Blindness-Group-Image-2048x1536.jpg"
   }
 ]
